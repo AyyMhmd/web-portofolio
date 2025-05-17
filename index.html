@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
   </head>
   <link rel="stylesheet" href="style/style.css" />
   <body class="bg-gray-50 text-gray-800">
@@ -82,6 +86,8 @@
     <section
       id="home"
       class="gradient-bg text-white pt-32 pb-20 md:pt-40 md:pb-28"
+      data-aos="fade-up"
+      data-aos-duration="1000"
     >
       <div
         class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center"
@@ -125,7 +131,12 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
+    <section
+      id="about"
+      class="py-20 bg-white"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-16 relative">
           <span class="relative inline-block">
@@ -207,7 +218,12 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-50">
+    <section
+      id="skills"
+      class="py-20 bg-gray-50"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-16 relative">
           <span class="relative inline-block">
@@ -220,85 +236,53 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <h3 class="text-xl font-semibold mb-6">Technical Skills</h3>
-            <div class="space-y-6">
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">HTML & CSS</span>
-                  <span>85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 85%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">JavaScript</span>
-                  <span>75%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 75%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">PHP</span>
-                  <span>70%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 70%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">MySQL</span>
-                  <span>65%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 65%"></div>
-                </div>
-              </div>
-            </div>
+            <ul class="flex flex-wrap gap-4">
+              <li
+                class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-medium flex items-center gap-2"
+              >
+                <i class="fab fa-html5 text-orange-500"></i> HTML & CSS
+              </li>
+              <li
+                class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-medium flex items-center gap-2"
+              >
+                <i class="fab fa-js text-yellow-500"></i> JavaScript
+              </li>
+              <li
+                class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-medium flex items-center gap-2"
+              >
+                <i class="fab fa-php text-purple-500"></i> PHP
+              </li>
+              <li
+                class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-medium flex items-center gap-2"
+              >
+                <i class="fas fa-database text-blue-400"></i> MySQL
+              </li>
+            </ul>
           </div>
           <div>
             <h3 class="text-xl font-semibold mb-6">Professional Skills</h3>
-            <div class="space-y-6">
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">Problem Solving</span>
-                  <span>80%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 80%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">Teamwork</span>
-                  <span>90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 90%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">Communication</span>
-                  <span>85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 85%"></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">Creativity</span>
-                  <span>75%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 75%"></div>
-                </div>
-              </div>
-            </div>
+            <ul class="flex flex-wrap gap-4">
+              <li
+                class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full font-medium flex items-center gap-2"
+              >
+                <i class="fas fa-lightbulb"></i> Problem Solving
+              </li>
+              <li
+                class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full font-medium flex items-center gap-2"
+              >
+                <i class="fas fa-users"></i> Teamwork
+              </li>
+              <li
+                class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full font-medium flex items-center gap-2"
+              >
+                <i class="fas fa-comments"></i> Communication
+              </li>
+              <li
+                class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full font-medium flex items-center gap-2"
+              >
+                <i class="fas fa-paint-brush"></i> Creativity
+              </li>
+            </ul>
           </div>
         </div>
         <div class="mt-16">
@@ -352,7 +336,12 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white">
+    <section
+      id="projects"
+      class="py-20 bg-white"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-16 relative">
           <span class="relative inline-block">
@@ -498,6 +487,53 @@
               </div>
             </div>
           </div>
+          <!-- Project 4: CityCare App -->
+          <div class="project-card rounded-xl overflow-hidden shadow-lg">
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://placehold.co/400x200?text=CityCare+App"
+                alt="CityCare App"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">CityCare App</h3>
+              <p class="text-gray-600 mb-4">
+                CityCare App adalah aplikasi web modern yang membantu masyarakat
+                melaporkan dan memantau permasalahan kota secara efisien. Dengan
+                antarmuka yang ramah pengguna, aplikasi ini memudahkan
+                pelaporan, pemantauan status, dan kolaborasi antara warga dan
+                pemerintah kota.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full"
+                  >Webpack</span
+                >
+                <span
+                  class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full"
+                  >JavaScript</span
+                >
+                <span
+                  class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full"
+                  >HTML</span
+                >
+                <span
+                  class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full"
+                  >CSS</span
+                >
+              </div>
+              <div class="flex space-x-3">
+                <a
+                  href="https://charming-dusk-592198.netlify.app/"
+                  class="text-indigo-600 hover:text-indigo-800"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="text-center mt-12">
           <a
@@ -511,7 +547,12 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 gradient-bg text-white">
+    <section
+      id="contact"
+      class="py-20 gradient-bg text-white"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-16 relative">
           <span class="relative inline-block">
@@ -693,5 +734,9 @@
     </footer>
 
     <script src="/script/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
